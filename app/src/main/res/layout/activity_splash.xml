@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="#ff8080"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+
+        android:layout_height="200dp"
+        android:src="@drawable/fish"
+        android:id="@+id/fish"
+        android:layout_centerInParent="true"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Hilsha Studio"
+            android:textColor="#fff"
+            android:fontFamily="@font/daddysgirl"
+            android:layout_below="@+id/fish"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+</RelativeLayout>

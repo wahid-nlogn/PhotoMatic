@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="SHARE"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/tabSelectedColor"
+        android:textStyle="italic|bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/facebookshare"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical"
+
+       >
+
+        <ImageView
+            android:layout_width="@dimen/size_of_sns_logo"
+            android:layout_height="@dimen/size_of_sns_logo"
+
+            android:layout_gravity="center"
+            android:src="@drawable/ic_facebook"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Facebook"
+            android:gravity="center"
+            android:textColor="@color/toolbarcolor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/instashare"
+      >
+
+        <ImageView
+            android:layout_width="@dimen/size_of_sns_logo"
+            android:layout_height="@dimen/size_of_sns_logo"
+
+            android:src="@drawable/ic_instagram_share"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Instragram"
+            android:gravity="center"
+            android:textColor="@color/toolbarcolor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/sharetwitter"
+       >
+
+        <ImageView
+            android:layout_width="@dimen/size_of_sns_logo"
+            android:layout_height="@dimen/size_of_sns_logo"
+
+            android:src="@drawable/ic_twitter"
+    />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Twitter"
+            android:textColor="@color/toolbarcolor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

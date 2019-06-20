@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="stickers_in_row">2</integer>
+    <integer name="bitmap_size">200</integer>
+    <integer name="num_of_columns">3</integer>
+    <integer name="inspiration_item_margin">20</integer>
+    <integer name="editing_toolbar_gravity">50</integer>
+    <integer name="editing_tool_panel_gravity">95</integer>
+    <integer name="tab_strip_item_space">20</integer>
+    <integer name="creat_snaps_container_weightsum">6</integer>
+    <integer name="filter_item_space">14</integer>
+    <integer name="filters_layout_weight_purchase_screen">8</integer>
+    <integer name="artwork_layout_weight_purchase_screen">8</integer>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="8"
+       android:background="@color/toolbarcolor"
+     >
+         <ImageView
+             android:layout_width="70dp"
+             android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+
+             android:id="@+id/newProject"
+             android:layout_marginLeft="5dp"
+             android:layout_centerVertical="true"
+
+             android:src="@drawable/back_icon"
+
+             />
+
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Photomatic"
+          android:textColor="#fff"
+          android:fontFamily="@font/my_custom_font"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:layout_centerInParent="true"
+          />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+           android:layout_alignParentRight="true"
+            android:indeterminateTint="@color/white"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="SAVE"
+             android:fontFamily="@font/daddysgirl"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:background="@null"
+             android:textColor="@color/white"
+             android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+             android:padding="10dp"
+             android:id="@+id/btnsaveImage"
+             />
+
+
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="55"
+
+
+       >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/ll_gpuimage"
+           >
+       <jp.co.cyberagent.android.gpuimage.GPUImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:layout_centerInParent="true"
+
+           android:id="@+id/mainImagview"/>
+       </RelativeLayout>
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="7"
+       android:orientation="horizontal"
+       android:background="@color/toolbarcolor"
+       android:weightSum="3"
+       >
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/layoutimageedit"
+           >
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/imgedit"
+               android:padding="5dp"
+               />
+       </LinearLayout>
+      <!-- <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/layoutresize"
+           >
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/resize"
+               android:padding="5dp"
+               />
+       </LinearLayout>-->
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/layoutfilter"
+           >
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/filter"
+               android:padding="5dp"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/layoutoverlay"
+           >
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/overla"
+               android:padding="5dp"
+               />
+       </LinearLayout>
+   </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="30"
+    android:id="@+id/fragmentContainer"
+    >
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="30"
+    android:id="@+id/filtercontainer"
+    android:visibility="gone"
+    >
+
+</FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:id="@+id/overlaycontainer"
+        android:visibility="gone"
+        >
+
+    </FrameLayout>
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/containerofLAndingFragment"
+       android:visibility="gone"
+       >
+
+   </FrameLayout>
+
+</LinearLayout>

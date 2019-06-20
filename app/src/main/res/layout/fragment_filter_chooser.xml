@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hilsha.studio.photomatic.fragments.ScrollingControllableViewPager
+        android:id="@+id/categoryViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/categorySlidingTabStrip"
+        android:background="@color/filtersViewBackgroundColor"/>
+
+    <com.hilsha.studio.photomatic.fragments.PagerSlidingTabStrip
+        android:id="@+id/categorySlidingTabStrip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_button_container_height"
+        android:textColor="@color/black"
+        app:pstsTabBackground="@drawable/tab_strip_state_list_drawable"
+        app:pstsTabPaddingLeftRight="24dp"
+        app:pstsTextAllCaps="true"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

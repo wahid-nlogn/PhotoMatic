@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Photomatic</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fb_app_id">346170836017585</string>
+    <string name="fb_login">fb346170836017585</string>
+
+    <string name="admob_ap_id">ca-app-pub-9262374288994134~6649659635</string>
+    <string name="full_screen_ap_id">ca-app-pub-9262374288994134/8126392830</string>
+
+    <string name="preference_file_key">sharedpref</string>
+    <string name="preference_file_key_2">shardprefbool</string>
+    <string name="seesion_count">sessioncount</string>
+
+    <string name="string_message_exit">Double tap to restart!</string>
+</resources>

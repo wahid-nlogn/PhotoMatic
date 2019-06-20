@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cc0000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="grayColor">#939393</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="tabSelectedColor">#ff1a1a</color>
+    <color name="colorTransparent">#00ffffff</color>
+
+    <color name="filtersViewBackgroundColor">#fff</color>
+
+    <color name="toolbarcolor">#cc0000</color>
+    <color name="toolbarcolorselected">#ff1a1a</color>
+
+    <color name="defaulttextcolor">#1a1a1a</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

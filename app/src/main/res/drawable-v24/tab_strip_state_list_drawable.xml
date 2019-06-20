@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:state_selected="true">
+                <shape>
+
+                    <solid android:color="@color/tabSelectedColor" />
+
+                    <padding
+                        android:bottom="2dp"
+                        android:left="13dp"
+                        android:right="13dp"
+                        android:top="2dp" />
+
+                    <corners
+                        android:radius="@dimen/tab_corner_radius" />
+                </shape>
+            </item>
+
+            <item>
+                <shape
+                    android:gravity="center"
+                    android:shape="rectangle">
+
+                    <!--<solid android:color="@color/blackHalf" />-->
+
+                    <padding
+                        android:bottom="8dp"
+                        android:left="13dp"
+                        android:right="13dp"
+                        android:top="8dp" />
+                </shape>
+            </item>
+
+        </selector>
+
+
+    </item>
+
+</layer-list>
